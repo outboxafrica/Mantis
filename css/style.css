@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans Unicode', cursive;
+  }
+  
+  nav {
+    background-color: rgba(0, 0, 0, 0.726);
+    /* display: none; */
+   
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+  
+  }
+  
+  nav ul li {
+   
+    padding: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    
+    font-size: 17px;
+  }
+  
+  li.logo {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+  
+  #hidden {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px){
+  
+  }
+  
+  footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.726);
+    color: white;
+    padding: 0.7rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .slogan {
+    
+    color: white;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .slogan img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+  }
+  
+  .slogan span {
+    position: absolute;
+    left: 30%;
+    bottom: 5%;
+    color: rgb(255, 123, 0);
+    font-size: 2rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 30%;
+    margin: 1rem;
+    height: 20rem;
+  }
+  
+  .box {
+    padding: 15px;
+    background-color: #2d3035;
+    border-radius: 5px;
+    height: 100%;
+  }
+  
+  .box img {
+    width: 100%;
+    height: 80%;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .span {
+    height: 8rem;
+  }
+  
+  
+  
+  /* mobile view styling */
+  
+  @media only screen and (max-device-width: 768px) {
+  
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Lucida Sans Unicode', cursive;
+      }
+  
+      .slogan {
+  
+        color: white;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        position: relative;
+      }
+      
+      .slogan img{
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+      }
+      
+      .slogan span {
+        position: absolute;
+        left: 11%;
+        bottom: 5%;
+        color: rgb(255, 123, 0);
+        font-size: 1rem;
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+      }
+      
+      .card {
+        width: 90%;
+        margin-bottom: 0.1rem;
+        height: 20rem;
+      }
+      
+      .box {
+        padding: 15px;
+        background-color: #edf0f5;
+        border-radius: 5px;
+        height: 100%;
+      }
+      
+      .box img {
+        width: 100%;
+        height: 80%;
+      }
+      
+      .span {
+        height: 8rem;
+      }
+      nav {  width: 100%;}
+    
+      nav ul li {
+          /* width: 1rem; */
+          padding: 0.5rem;
+          font-size: medium;
+        
+      }
+    
+      li.logo{
+          width: 50%;
+          
+          font-size: medium; 
+      }
+    
+      .normal-view {
+          display: none;
+      }
+    
+      #hidden {
+          display: block;
+      }
+    
+      .dropdown-content {
+          display: none;
+      }
+    
+      #hidden:hover .dropdown-content{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+      }
+    
+      .dropdown-content {
+          padding: 0.5rem;
+          background-color: gray;
+      }
+    
+      .dropdown-content a:hover{
+          background-color: black;
+       
+      }      
+  }
+  
+  
+  /* end of mobile view */
+  
