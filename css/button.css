@@ -1,0 +1,13 @@
+/* The reason for this button being Independent is to prevent conflicting CSS */
+button {
+    /* color: #fff; */
+    width: 25%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+	color: #fb2274;
+}
