@@ -23,12 +23,12 @@
     padding: 1rem;
   }
   
-  a {
+  li.normal-view a {
     text-decoration: none;
     color: white;
   }
   
-  a:hover {
+  li.normal-view a:hover {
     
     font-size: 17px;
   }

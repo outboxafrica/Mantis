@@ -33,3 +33,7 @@ function allMenu(menu){
   }
 }
 
+function menuSearch(){
+  alert('he');
+
+}

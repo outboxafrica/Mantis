@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="/css/contact.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
     <header>
@@ -29,19 +30,14 @@
         </nav>
     </header>
 
-
-    <!-- <div class="slogan">
-        <img src="./img/3.jpg" >
-
-        <span>
-            <h4>WELCOME TO THE EDU RESTAURANT</h4><br>
-            
-            <em></em>"The Food Center"</em>
-        </span>
-    </div> -->
-
     <h1 style="text-align: center;"> Our  Food Menu</h1>
+    <div class="divSearch">
+      <form>
+        <input type="text" id="searchItem" placholder="Food Search"><button id="searchButton" type="submit">Search</button>
+      </form>
+    </div>
     <div class="container">
+     
     
     </div>
 
@@ -50,7 +46,7 @@
     <footer>
         <h3>All Rights Reserved By <a href="#">Team_Mantis</a> &nbsp; &copy; Copyright 2020 </h3>
     </footer>
-    <script src="js/Menu.js"></script>
+    <script src="js/menu.js"></script>
 <script>
   let foodMenu =[
   { dish: 'potatoes', images:'CurryPotatoes.jpg', alt:'potatoes Image'},
@@ -59,6 +55,10 @@
   ];
 
 allMenu(foodMenu);
+
+let searchBtn = document.getElementById('searchButton');
+
+searchBtn.addEventListener('click', menuSearch());
 
 </script>    
 </body>
