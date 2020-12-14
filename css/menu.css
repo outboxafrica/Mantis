@@ -1,0 +1,24 @@
+/* .row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
+a.menuNavs:link{
+  color:#fff;
+  /* display:block; */
+  text-align: center;
+}
+
+a.menuNavs:visited, a.menuNavs:active {
+  text-decoration: underline;
+}
+
+a.menuNavs:hover{
+  color:rgba(255,255,255,0.5);
+  /* display:block; */
+  text-align: center;
+  text-decoration: underline;
+}
+
+

@@ -1,7 +1,9 @@
 
+let container = document.querySelector('.container');
 //fn to get all foods
 function allMenu(menu){
-  let container = document.querySelector('.container');
+  // let row = document.createElement('div');
+  // row.setAttribute('class','rows');
 
   for(let i = 0; i<menu.length; i++){
     //creating the html tags
@@ -29,11 +31,19 @@ function allMenu(menu){
     boxDiv.appendChild(newImg);
     boxDiv.appendChild(a);
     cardDiv.appendChild(boxDiv);
+    // row.appendChild(cardDiv)
+    // container.appendChild(row);
     container.appendChild(cardDiv);
+    container.appendChild
+
   }
 }
 
 function menuSearch(){
-  alert('he');
+
+  let searchitem = document.querySelector('#searchItem').value;
+ // alert(searchitem);
+ let menu = foodMenu.filter(menuitem => menuitem.dish.startsWith(`${searchitem}`));
+ console.log(menu);   
 
 }
