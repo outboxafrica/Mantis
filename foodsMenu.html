@@ -42,35 +42,7 @@
 
     <h1 style="text-align: center;"> Our  Food Menu</h1>
     <div class="container">
-        <div class="card">
-            <div class="box">
-                <!-- <a href="#">
-                    <img class="img" src="./img/2.jpg" alt='FOOD'>
-                    <h4>BREAKFAST MENU</h4>
-                    <p>We are big on breakfast</p>
-                </a> -->
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="box">
-                <a href="#">
-                <img src="./img/img8.jpg" alt='SNACKS'>
-                <h4>LUNCH AND DINNER</h4>
-                <p>Checkout our main meals</p>
-            </a>
-            </div>
-        </div>
-        
-        <div class="card">
-            <div class="box">
-                <a href="#">
-                <img src="./img/creamy milkshakes.jpg" alt='drinks'>
-                <h4>DRINKS</h4>
-                <p>Checkout our drinks</p>
-            </a>
-            </div>
-        </div>
+    
     </div>
 
     <div class="span"></div>
@@ -78,7 +50,16 @@
     <footer>
         <h3>All Rights Reserved By <a href="#">Team_Mantis</a> &nbsp; &copy; Copyright 2020 </h3>
     </footer>
+    <script src="js/Menu.js"></script>
+<script>
+  let foodMenu =[
+  { dish: 'potatoes', images:'CurryPotatoes.jpg', alt:'potatoes Image'},
+  {dish: 'gati', images: 'gati.jpg', alt: 'gati boil'},
+  {dish: 'gatti Fried', images: 'gati3.jpg', alt: 'gati fried'}
+  ];
 
-<script src="js/foodMenu.js"></script>    
+allMenu(foodMenu);
+
+</script>    
 </body>
 </html>
