@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./css/menu.css">
+    <link rel="stylesheet" type="text/css" href="./css/contact.css">
+    <link rel="stylesheet" type="text/css" href="./css/nav.css">
+    <title>MENU</title>
+  </head>
+ 
+  <body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        
+        <div class="nav-header">
+          <div class="nav-title">Mantis</div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="/index.html">HOME</a>
+          <a href="/menu.html">MENU</a>
+          <a href="/contact.html">CONTACT US</a>
+          <a href="/signUp.html">LOGIN | SIGN UP</a>
+        </div>
+    </div>
+
+    <div class="row" id="search">
+        <form id="search-form" action="" method="#" enctype="multipart/form-data">
+            <div class="form-group col-xs-9">
+                    <input class="form-control" type="text" placeholder="Search">
+                <div class="form-group col-xs-3"><br>
+                    <button type="submit" class="btn btn-block btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container"> 
+        <h1>..PRODUCTS..</h1>
+        <p>"Thank You For Shopping With Us.."</p>
+        <div id="alerts"></div>
+
+        <!-- FOODS MENU -->
+        <h2>FOODS</h2>
+        <div class="productcont">
+            <div class="product">
+                <h3 class="productname">Junkies</h3>
+                <img class="card-img-top" src="/img/productimg/foo.jpg" alt="foods">
+                <p>A Splendid Taste of Sweetness and Crunchness.</p>
+                <p class="price">shs5.05</p>
+                <button class="addtocart">Add To Menu</button>
+            </div>
+
+            <div class="product">
+                <h3 class="productname">Mazania</h3>
+                <img class="card-img-top" src="/img/productimg/mazania.jpg" alt="mazania">
+                <p>A Wonderful Taste of Modern Italian Pizzaeria.</p>
+                <p class="price">shs980</p>
+                <button class="addtocart">Add To Menu</button>
+            </div>
+
+            <div class="product">
+                <h3 class="productname">Mayonese</h3>
+                <img class="card-img-top" src="/img/productimg/mayonese.jpg" alt="mayonese">
+                <p>A Dripping Crisp Mayonese Crunch Taste.</p>
+                <p class="price">shs5.05</p>
+                <button class="addtocart">Add To Menu</button>
+            </div>
+        </div><br> 
+
+        <!-- DRINKS MENU -->
+        <h2>DRINKS</h2>
+        <div class="productcont">
+            <div class="product">
+                <h3 class="productname">Apple Basket</h3>
+                <img class="card-img-top" src="/img/productimg/fruibas.jpg" alt="fruit_basket">
+                <p>A Fly Light Gift Exclusive Apple Basket.</p>
+                <p class="price">shs733.5</p>
+                <button class="addtocart">Add To Menu</button>
+            </div>
+            <div class="product">
+                <h3 class="productname">Grapes</h3>
+                <img class="card-img-top" src="/img/productimg/grapes.jpg" alt="grapes">
+                <p>Sweetness From Dalnishing Grapes.</p>
+                <p class="price">shs672</p>
+                <button class="addtocart">Add To Menu</button>
+            </div>
+            
+            <div class="product">
+                <h3 class="productname">Pears</h3>
+                <img class="card-img-top" src="/img/productimg/pears.jpg" alt="pears">
+                <p>An Exciting Bunch of Mesmerizing Pears.</p>
+                <p class="price">shs8737</p>
+                <button class="addtocart">Add To Menu</button>
+            </div>
+        </div>
+
+        <div class="cart-container">
+            <h2>PRODUCT MENU</h2>
+            <table>
+                <thead>
+                <tr>
+                <th><strong>Product</strong></th>
+                <th><strong>Price</strong></th>
+                </tr>
+                </thead>
+                <tbody id="carttable">
+                </tbody>
+            </table>
+            <hr>
+            <table id="carttotals">
+                <tr>
+                <td><strong>Items</strong></td>
+                <td><strong>Total</strong></td>
+                </tr>
+                <tr>
+                <td>x <span id="itemsquantity">0</span></td>
+                
+                <td>shs<span id="total">0</span></td>
+                </tr>
+            </table>
+    
+            <div class="cart-buttons">  
+                <button id="emptycart">Empty Menu</button>
+                <button id="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/menu.js"></script>
+  </body>
+</html>
