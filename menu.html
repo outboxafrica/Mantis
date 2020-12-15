@@ -33,16 +33,30 @@
     </div>
 
     <div class="row" id="search">
-        <form id="search-form" action="" method="#" enctype="multipart/form-data">
+        <form id="search-form" action="" method="" enctype="multipart/form-data">
             <div class="form-group col-xs-9">
-                    <input class="form-control" type="text" placeholder="Search">
+                    <input class="form-control" id='searchItem' type="text" placeholder="Search">
                 <div class="form-group col-xs-3"><br>
-                    <button type="submit" class="btn btn-block btn-primary">Search</button>
+                    <button type="submit" id="btnSearch" class="btn btn-block btn-primary">Search</button>
                 </div>
             </div>
         </form>
     </div>
-
+<script>
+    let foods = [
+    {productname: 'Mazania', description:'A Wonderful Taste of Modern Italian Pizzaeria.', images:'mazania.jpg', price:'shs980'},
+    {productname: 'Mayonese', description:'A Dripping Crisp Mayonese Crunch Taste.', images:'mayonese.jpg', price:'shs5.05'},
+    { productname: 'Junkies', description:'A Splendid Taste of Sweetness and Crunchness.', images:'foo.jpg', price:'shs5.05'}
+    ];
+    let  btnSearch = document.querySelector('#btnSearch');
+    btnSearch.addEventListener('click',function(){
+        let searchitem = document.querySelector('#searchItem').value;
+   // alert(searchitem);
+   let menu = foods.filter(menuitem => menuitem.productname.startsWith(`${searchitem}`));
+   console.log(menu);
+    });
+     
+</script>
     <div class="container"> 
         <h1>..PRODUCTS..</h1>
         <p>"Thank You For Shopping With Us.."</p>
@@ -50,16 +64,19 @@
 
         <!-- FOODS MENU -->
         <h2>FOODS</h2>
+
+
+
         <div class="productcont">
-            <div class="product">
+            <!-- <div class="product">
                 <h3 class="productname">Junkies</h3>
                 <img class="card-img-top" src="/img/productimg/foo.jpg" alt="foods">
                 <p>A Splendid Taste of Sweetness and Crunchness.</p>
                 <p class="price">shs5.05</p>
                 <button class="addtocart">Add To Menu</button>
-            </div>
+            </div> -->
 
-            <div class="product">
+            <!-- <div class="product">
                 <h3 class="productname">Mazania</h3>
                 <img class="card-img-top" src="/img/productimg/mazania.jpg" alt="mazania">
                 <p>A Wonderful Taste of Modern Italian Pizzaeria.</p>
@@ -73,7 +90,7 @@
                 <p>A Dripping Crisp Mayonese Crunch Taste.</p>
                 <p class="price">shs5.05</p>
                 <button class="addtocart">Add To Menu</button>
-            </div>
+            </div> -->
         </div><br> 
 
         <!-- DRINKS MENU -->
