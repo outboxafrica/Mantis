@@ -1,0 +1,7 @@
+.success {
+    background-color: #4CAF50;
+}
+
+.success:hover {
+    background-color: #46a049;
+}

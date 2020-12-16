@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/alert.css">
     <title>MENU</title>
   </head>
  
@@ -42,7 +43,6 @@
             </div>
         </form>
     </div>
-
     <div class="container"> 
         <h1>..PRODUCTS..</h1>
         <p>"Thank You For Shopping With Us.."</p>
@@ -69,7 +69,7 @@
 
             <div class="product">
                 <h3 class="productname">Mayonese</h3>
-                <img class="card-img-top" src="/img/productimg/mayonese.jpg" alt="mayonese">
+                <img class="card-img-top" src="./img/productimg/mayonese.jpg" alt="mayonese">
                 <p>A Dripping Crisp Mayonese Crunch Taste.</p>
                 <p class="price">shs5.05</p>
                 <button class="addtocart">Add To Menu</button>
@@ -81,7 +81,7 @@
         <div class="productcont">
             <div class="product">
                 <h3 class="productname">Apple Basket</h3>
-                <img class="card-img-top" src="/img/productimg/fruibas.jpg" alt="fruit_basket">
+                <img class="card-img-top" src="img/productimg/fruibas.jpg" alt="fruit_basket">
                 <p>A Fly Light Gift Exclusive Apple Basket.</p>
                 <p class="price">shs733.5</p>
                 <button class="addtocart">Add To Menu</button>
@@ -130,10 +130,12 @@
     
             <div class="cart-buttons">  
                 <button id="emptycart">Empty Menu</button>
-                <a href="./menu.html"><button id="checkout" type="submit">Checkout</button></a>
+                <a href="./menu.html" ><button id="checkout" type="submit" onclick="success()">Checkout</button></a>
+                <!-- <button class="btn success" onclick="success()">Success</button> -->
             </div>
         </div>
     </div>
-    <script src="/js/menu.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/alert.js"></script>
   </body>
 </html>

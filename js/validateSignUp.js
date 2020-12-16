@@ -59,6 +59,9 @@ function signUp(){
         printError("password_err", "");
         password_err = false;
     }
+    function success() {
+        alert("Operation Successfull.")
+    }
     
     // _______ Preventing the form from being submited if their are any errors
     if((username_err || email_err  || password_err) === true){
@@ -67,5 +70,8 @@ function signUp(){
         event.currentTarget.submit()
     }
      
+}
+function success() {
+    alert("Operation Successfull.")
 }
 

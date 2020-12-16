@@ -109,11 +109,29 @@ input{
 
 .form-control {
     float: inherit;
-    width: 72rem;
+    width: 14rem;
     padding: 6px;
     border: none;
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
     border-radius: 10rem;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .productcont {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .cart-container {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
